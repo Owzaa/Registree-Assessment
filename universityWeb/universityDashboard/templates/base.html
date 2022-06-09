@@ -8,20 +8,20 @@
     <title>{% block title %} {% enblock %}</title>
 </head>
 <body>
-    <div id="container">
 
-        {% block navBar %}
+        {% block nav %}
 
-            <div class class="navbar">
+            <nav aria-label="main-navigation"  class="navbar is-light" role="navigation">
 
-                <div class="content">
+                <div class="navbar-nav">
                         <!--University Dashboard Link -->
-                    <ul class="NavLinksContainer">
+                    <ul class="nav">
                         <li>
                             <a class="link" href="{% url 'dashView' %}">Dashboard</a>
                         </li>   
                     </ul>
-            </div>
+                </div>
+            </nav>
 
 
 
@@ -33,7 +33,6 @@
 
 
 
-    </div>
     <div id="Container">
         {% block content %}
 

@@ -16,7 +16,7 @@ def dashView(request,URL__API):
     response = requests.get(URL__API.json())
     return render(request,'universityDashboard/dashboard.html',{'response': response, 'title':title})
 
-# Dashboard View
+# Dashboard TableView
 class DashboardTable(TemplateView):
     Template_name = 'dashboard.html'
     def get_context_data (self,*args, **kwargs):
