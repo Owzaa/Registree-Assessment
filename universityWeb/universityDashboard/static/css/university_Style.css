@@ -28,7 +28,7 @@ thead{justify-content:space-between;display:inline-table;color:#666;}
 th{border-radius:15px;text-transform: uppercase;font-size: x-large;padding:15px;;margin-left:5px;}
 thead, tfoot {
     color: rgba(13, 13, 13, 0.617);
-    margin-right:5px;
+    padding:65px;
     text-shadow: 1px 1px 1px rgba(121, 121, 121, 0.116);
   }
   table {
@@ -37,7 +37,10 @@ thead, tfoot {
   
   thead th, tfoot th, tfoot td {
     margin-right:5px;
+    justify-content: center;
 
     border: 1px solid rgba(0, 0, 0, 0.408);
   }
   button{border-radius:15px;text-transform: uppercase;font-size: large;padding:5px;;margin-left:5px;}
+  input{padding:5px 5px; box-sizing: content-box; border-radius:15px;    border: 1px solid rgba(0, 0, 0, 0.408);
+  }
