@@ -25,8 +25,8 @@ def get_universitiesMarks():
     r = requests.get(url,headers={'Authorization': 'Bearer %s' % os.getenv('DO_ACCESS_TOKEN')})
     universities = r.json()
     university_marks = []
-    for i in range(len(universitiess['universities'])):
-        university_marks.append(universities_marks['universities_marks'][i])
+    for i in range(len(universities['universities'])):
+        university_marks.append(universities['universities'][i])
     return university_marks
 
 
