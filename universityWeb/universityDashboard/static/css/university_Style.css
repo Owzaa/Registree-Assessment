@@ -5,5 +5,8 @@
 
 /* University Navbar style */
 .navbar{display:block; justify-content: center; }
-.navbar-nav{display: inline-flex; justify-content: center; background-color: azure;}
-.navbar-link{display: block;text-decoration: none; color:black}
+.navbar-nav{display: block; justify-content: center; background-color: azure;}
+.navbar-link{display: inline-flex;text-decoration: none; color:black}
+
+
+.textHeader{display: flex;justify-content: center;color:#666;text-transform: uppercase;}
