@@ -1,6 +1,7 @@
 *{
     padding-left: 0px 15px;
     margin:5px;
+    justify-content: center;
 }
 
 /* University Navbar style */
@@ -25,5 +26,5 @@ ul>li{
 /* UniversityHeader*/
 .textHeader{display: flex;padding-top:15px;justify-content: center;color:#666;text-transform: uppercase;}
 
-table > .table{display: flex;padding:5px 5px;justify-content: center;}
-th{padding:25px;padding-left: 55px 55px;text-transform: uppercase;border-style:none;}
+table {display:contents;padding:5px 35px;justify-content: center;}
+th{padding:25px;padding-left: 0px 55px;text-transform: uppercase;border-style:none;}
