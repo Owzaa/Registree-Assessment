@@ -1,5 +1,5 @@
 *{
-    padding-left: 15px 15px;
+    padding-left: 0px 15px;
     margin:5px;
 }
 
@@ -25,5 +25,5 @@ ul>li{
 /* UniversityHeader*/
 .textHeader{display: flex;padding-top:15px;justify-content: center;color:#666;text-transform: uppercase;}
 
-table > .table{display: flex;padding:5px 5px}
-th{padding: 35px;text-transform: uppercase;border-style: groove;}
+table > .table{display: flex;padding:5px 5px;justify-content: center;}
+th{padding:25px;padding-left: 55px 55px;text-transform: uppercase;border-style:none;}
