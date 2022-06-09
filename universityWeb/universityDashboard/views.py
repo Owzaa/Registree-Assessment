@@ -11,5 +11,6 @@ URL__API = ['https://registree-coding-challenge.glitch.me/UJ/marks',
 
 # GET__API then return University to JSON() DATA
 def dashView(request,URL__API):
+    title = 'University - Dashboard'
     response = requests.get(URL__API.json())
-    return render(request,'index.html',{'response': response})
+    return render(request,'index.html',{'response': response, 'title':title})
