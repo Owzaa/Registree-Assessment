@@ -6,8 +6,7 @@ from .services import get_universitiesMarks, get_universitiesNames
 
 def homeView(request):
     title = 'Our Universities (UJ/SU)'
-    university_data = requests.get('https://api.covid19api.com/countries').json()
-    return render(request,'dashboard.html',{'university_data':university_data, 'title':title})
+    return render(request,'dashboard.html',{'title':title})
 
 class GetUniversityNames(TemplateView):
     template_name ='dashboard.html'   

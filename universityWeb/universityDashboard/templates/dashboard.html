@@ -6,6 +6,7 @@
 {% block content %}
 <h1 class="textHeader">Dashboard</h1>
 
+{% block form %}
 <form class="search-form" id="searchForm">
     <label name="searchTable_Data">Filter By:</label>
     <select id="filter-select">
@@ -28,6 +29,7 @@
 
     
 </form>
+{% endblock %}
 <table class="table-fullwidth bordered">
 <thead>
 
@@ -40,10 +42,10 @@
 </thead>
 
 <tbody>
-{% for university in universities %}
+{% for university in university_names %}
 
 <tr>
-    <td>{{ university.student_id  }}</td>
+    <td>{{ university.Student_id  }}</td>
     <td>{{ university.university }}</td>
     <td>{{ university.name }}</td> 
     
