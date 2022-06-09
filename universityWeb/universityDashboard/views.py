@@ -5,8 +5,7 @@ from .services import get_universitiesMarks, get_universitiesNames
 
 def homeView(request):
     title = 'University - Dashboard'
-    universityData =get_universitiesNames() 
-    return render(request,'dashboard.html',{'universityData':universityData,'title':title})
+    return render(request,'dashboard.html',{'title':title})
 
 
 class GetUniversityNames(TemplateView):
