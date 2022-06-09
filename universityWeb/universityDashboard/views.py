@@ -5,7 +5,12 @@ from .services import get_universitiesMarks, get_universitiesNames
 
 def homeView(request):
     title = 'University - Dashboard'
-    return render(request,'dashboard.html',{'title':title})
+    def get_context_data(self, *args, **kwargs):
+        context = {
+                'universities':get_universitiesNames(),
+                'universities':get_universitiesMarks(),
+        }
+    return render(request,'dashboard.html',{'context':context,'title':title})
 
 
 class GetUniversityNames(TemplateView):
