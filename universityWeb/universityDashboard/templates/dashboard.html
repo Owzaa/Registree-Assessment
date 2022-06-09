@@ -5,6 +5,29 @@
 
 {% block content %}
 <h1 class="textHeader">Dashboard</h1>
+
+<form class="search-form" id="searchForm">
+    <label name="searchTable_Data">Filter By:</label>
+    <select id="filter-select">
+        <option value="">--Please choose an Option--</option>
+        <option value="name">Name</option>
+        <option value="student_id">Mark</option>
+        <option value="university">University</option>
+    </select>
+    <input type="text" name="search" class="text-input"/>
+    
+    <label name="searchTable_Data">Sort By:</label>
+    <select id="filter-select">
+        <option value="">--Please choose an Option--</option>
+        <option value="name">Name</option>
+        <option value="student_id">Mark</option>
+        <option value="university">University</option>
+    </select>
+    <input type="text" name="search" class="text-input"/>
+    <button type="submit" class="btn-button">filter</button>
+
+    
+</form>
 <table class="table-fullwidth bordered">
 <thead>
 

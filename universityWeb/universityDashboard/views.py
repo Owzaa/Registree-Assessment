@@ -1,14 +1,13 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+import requests
 import os
 from .services import get_universitiesMarks, get_universitiesNames
 
 def homeView(request):
     title = 'Our Universities (UJ/SU)'
-    university_marks = get_universitiesMarks
-    university_names = get_universitiesNames
-    return render(request,'dashboard.html',{'university_marks':university_marks,
-                                            'university_names':university_names,'title':title})
+    university_data = requests.get('https://api.covid19api.com/countries').json()
+    return render(request,'dashboard.html',{'university_data':university_data, 'title':title})
 
 class GetUniversityNames(TemplateView):
     template_name ='dashboard.html'   
