@@ -1,0 +1,9 @@
+*{
+    padding: 0 35px;
+    margin:5px;
+}
+
+/* University Navbar style */
+.navbar{display:block; justify-content: center; }
+.navbar-nav{display: inline-flex; justify-content: center; background-color: azure;}
+.navbar-link{display: block;text-decoration: none; color:black}
