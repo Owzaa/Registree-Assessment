@@ -8,6 +8,32 @@
     <title>{% block title %} {% enblock %}</title>
 </head>
 <body>
+    <div id="container">
+
+        {% block navBar %}
+
+            <div class class="navbar">
+
+                <div class="content">
+                        <!--University Dashboard Link -->
+                    <ul class="NavLinksContainer">
+                        <li>
+                            <a class="link" href="{% url 'dashView' %}">Dashboard</a>
+                        </li>   
+                    </ul>
+            </div>
+
+
+
+        {% endblock %}
+
+
+
+
+
+
+
+    </div>
     <div id="Container">
         {% block content %}
 
