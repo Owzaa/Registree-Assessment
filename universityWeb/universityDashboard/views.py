@@ -9,13 +9,13 @@ def homeView(request):
 
 
 class GetUniversityNames(TemplateView):
-    Template_name ='dashboard.html'   
+    template_name ='dashboard.html'   
     def get_context_data (self,*args, **kwargs):
         context= {'names':get_universitiesNames(),}  
         return context
 
 class GetUniversityMarks(TemplateView):
-    Template_name ='dashboard.html'   
+    template_name ='dashboard.html'   
     def get_context_data (self,*args, **kwargs):
         context= {'marks':get_universitiesMarks(),}  
         return context
