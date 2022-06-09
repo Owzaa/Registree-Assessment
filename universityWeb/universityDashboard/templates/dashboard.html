@@ -1,10 +1,10 @@
-{% extends base %}
+{% extends universityDashboard/base.html %}
 {% load static %}
-
+{% block title%} Dashboard {% endblock %}
 
 
 {% block content %}
-<h1>University dashboard</h1>
+<h1> University Tablelist Dashboard</h1>
 {% for i in response %}
 <ul>
 <a href="{{ response.get_absolute_url }}">
@@ -12,4 +12,6 @@
 </a>
 
 </ul> 
+
+{% endfor %}
 {% endblock %}
