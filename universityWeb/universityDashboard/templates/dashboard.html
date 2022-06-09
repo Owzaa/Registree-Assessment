@@ -5,7 +5,8 @@
 
 {% block content %}
 <h1 class="textHeader">Dashboard</h1>
-
+<hr/>
+<br/>
 {% block form %}
 <form class="search-form" id="searchForm">
     <label name="searchTable_Data">Filter By:</label>
@@ -15,7 +16,7 @@
         <option value="student_id">Mark</option>
         <option value="university">University</option>
     </select>
-    <input type="text" name="search" class="text-input"/>
+    <input type="text" name="search_filter" class="text-input"/>
     
     <label name="searchTable_Data">Sort By:</label>
     <select id="filter-select">
@@ -24,8 +25,8 @@
         <option value="student_id">Mark</option>
         <option value="university">University</option>
     </select>
-    <input type="text" name="search" class="text-input"/>
-    <button type="submit" class="btn-button">filter</button>
+    <input type="text" name="sort_by" class="text-input"/>
+    <button type="submit" name="search" class="btn-button">filter</button>
 
     
 </form>
@@ -42,14 +43,14 @@
 </thead>
 
 <tbody>
-{% for university in university_names %}
+{% for university in context %}
 
 <tr>
-    <td>{{ university.Student_id  }}</td>
+    <td>{{ university.student_id  }}</td>
     <td>{{ university.university }}</td>
     <td>{{ university.name }}</td> 
     
-    {% for university in university_marks %}
+    {% for university in context %}
     <td>{{ university.mark }}</td>
     {% endfor %}
 
