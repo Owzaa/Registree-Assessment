@@ -17,15 +17,15 @@
 </thead>
 
 <tbody>
-{% for university in universities %}
+{% for university in universities_names %}
 
 <tr>
     <td>{{ university.student_id  }}</td>
     <td>{{ university.university }}</td>
     <td>{{ university.name }}</td> 
     
-    {% for universities in marks %}
-    <td>{{ universities.mark }}</td>
+    {% for university in universities_marks %}
+    <td>{{ university.mark }}</td>
     {% endfor %}
 
 </tr>
