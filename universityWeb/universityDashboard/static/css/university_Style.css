@@ -24,3 +24,6 @@ ul>li{
 }
 /* UniversityHeader*/
 .textHeader{display: flex;padding-top:15px;justify-content: center;color:#666;text-transform: uppercase;}
+
+table > .table{display: flex;padding:5px 5px}
+th{padding: 35px;text-transform: uppercase;border-style: groove;}
