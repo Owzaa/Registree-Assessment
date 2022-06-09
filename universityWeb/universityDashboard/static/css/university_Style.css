@@ -25,6 +25,6 @@ ul>li{
 }
 /* UniversityHeader*/
 .textHeader{display: flex;padding-top:15px;justify-content: center;color:#666;text-transform: uppercase;}
-
-table {display:contents;padding:5px 35px;justify-content: center;}
-th{padding:25px;padding-left: 0px 55px;text-transform: uppercase;border-style:none;}
+.navbar-nav{display: flex;}
+table {display:contents;padding:5px 35px;justify-content: center;align-items: center;}
+th{padding:25px;padding-left: 0px 55px;text-transform: uppercase;border-style:none;align-items: center;}
