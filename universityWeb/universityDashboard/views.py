@@ -5,8 +5,8 @@ from .services import get_universitiesMarks, get_universitiesNames
 
 def homeView(request):
     title = 'University - Dashboard'
-    university_marks = get_universitiesMarks()
-    university_names = get_universitiesNames()
+    university_marks = get_universitiesMarks
+    university_names = get_universitiesNames
     return render(request,'dashboard.html',{'university_marks':university_marks,
                                             'university_names':university_names,'title':title})
 
