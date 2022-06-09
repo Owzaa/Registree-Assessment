@@ -18,6 +18,6 @@ from django.urls import path, include
 from universityDashboard import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.dashView, name='dashView'),
+    path('',views.homeView, name='homeView'),
 
 ]
