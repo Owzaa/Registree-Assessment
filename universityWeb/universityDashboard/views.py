@@ -4,7 +4,7 @@ import os
 from .services import get_universitiesMarks, get_universitiesNames
 
 def homeView(request):
-    title = 'University - Dashboard'
+    title = 'Our Universities (UJ/SU)'
     university_marks = get_universitiesMarks
     university_names = get_universitiesNames
     return render(request,'dashboard.html',{'university_marks':university_marks,
