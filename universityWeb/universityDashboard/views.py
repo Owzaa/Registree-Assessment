@@ -15,6 +15,6 @@ def dashView(request,URL__API):
     response = requests.get(URL__API.json())
     def get_context_data (self,*args, **kwargs):
         pass  
-    return render(request,'index.html',{'response': response, 'title':title})
+    return render(request,'universityDashboard/dashboard.html',{'response': response, 'title':title})
 
 
