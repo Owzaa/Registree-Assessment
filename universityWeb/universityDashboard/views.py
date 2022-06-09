@@ -1,24 +1,20 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 import requests
+import os
 
-
-
-
-# GET__API then return University to JSON() DATA
-def dashView(request):
-    title = 'University - Dashboard'
-    url = 'https://registree-coding-challenge.glitch.me/UJ/marks'
-    response = requests.get(url,headers={'Authorization': 'Bearer %s' 'access_token'})
+class GetUniversityMarks(TemplateView):   
+    url = 'https://registree-coding-challenge.glitch.me/UJ/marks' or 'https://registree-coding-challenge.glitch.me/SU/marks' 
+    response = requests.get(url,headers={'Authorization': 'Bearer %s' % os.getenv('DO_ACCESS_TOKEN')})
     university = response.json()
     university_marks = []
-    university_names = []
-    
-    return render(request,'universityDashboard/template/dashboard.html',{'response': response, 'title':title,})
+    def get_context_data (self,*args, **kwargs):
+        pass  
 
-# Dashboard TableView
-# security Authorization 
-class DashboardTable(TemplateView):
-    Template_name = 'universityDashboard/template/dashboard.html'
+class GetUniversityNames(TemplateView):
+    url = 'https://registree-coding-challenge.glitch.me/UJ/names' or 'https://registree-coding-challenge.glitch.me/SU/names' 
+    response = requests.get(url,headers={'Authorization': 'Bearer %s' % os.getenv('DO_ACCESS_TOKEN')})
+    university = response.json()
+    university_names = []
     def get_context_data (self,*args, **kwargs):
         pass  
