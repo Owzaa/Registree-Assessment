@@ -13,7 +13,7 @@ a{text-decoration: none;color:#666}
 ul>li{
     justify-content:center;
     padding-top: 0px 10px;
-    top: 16px;
+    top: 25px;
     font-weight: 800;
     margin: 2.5px;
     font-weight: 400;
@@ -24,7 +24,8 @@ ul>li{
     color:rgba(172, 166, 166, 0.561);
 }
 /* UniversityHeader*/
-.textHeader{display: flex;padding-top:15px;justify-content: center;color:#666;text-transform: uppercase;}
+.textHeader{display: flex;padding-top:15px;justify-content:center;color:#666;text-transform: uppercase;}
 .navbar-nav{display: flex;}
-table {display:contents;padding:5px 35px;justify-content: center;align-items: center;}
+thead{justify-content: center;display: flex;}
+table {display:flex;padding:5px 35px;justify-content: center;align-items: center;}
 th{padding:25px;padding-left: 0px 55px;text-transform: uppercase;border-style:none;align-items: center;}
