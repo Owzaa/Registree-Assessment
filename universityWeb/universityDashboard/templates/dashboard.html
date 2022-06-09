@@ -6,5 +6,27 @@
 {% block content %}
 <h1 class="textHeader"> University Dashboard</h1>
 
+<thead>
+
+<tr>
+    <th>Student_id</th>
+    <th>University</th>
+    <th>Name</th>
+    <th>Marks</th>
+</tr>
+</thead>
+
+<tbody>
+{% for univers in university  %}
+
+<tr>
+    <td>{{univers.student_id  }}</td>
+    <td>{{ univers.university }}</td>
+    <td>{{ univers.name }}</td>
+    <td>{{ univers.mark }}</td>
+
+</tr>
+
+</tbody>
 
 {% endblock %}
