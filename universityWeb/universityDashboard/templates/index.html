@@ -1,3 +1,15 @@
 {% extends base %}
 {% load static %}
 
+
+
+{% block content %}
+<h1>University dashboard</h1>
+{% for i in response %}
+<ul>
+<a href="{{ response.get_absolute_url }}">
+{{ i.University }}
+</a>
+
+</ul> 
+{% endblock %}

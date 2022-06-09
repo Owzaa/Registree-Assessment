@@ -13,4 +13,8 @@ URL__API = ['https://registree-coding-challenge.glitch.me/UJ/marks',
 def dashView(request,URL__API):
     title = 'University - Dashboard'
     response = requests.get(URL__API.json())
+    def get_context_data (self,*args, **kwargs):
+        pass  
     return render(request,'index.html',{'response': response, 'title':title})
+
+
