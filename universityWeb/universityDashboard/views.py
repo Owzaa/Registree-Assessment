@@ -14,10 +14,11 @@ def dashView(request):
     university_marks = []
     university_names = []
     
-    return render(request,'universityDashboard/templates/dashboard.html',{'response': response, 'title':title,})
+    return render(request,'universityDashboard/template/dashboard.html',{'response': response, 'title':title,})
 
 # Dashboard TableView
+# security Authorization 
 class DashboardTable(TemplateView):
-    Template_name = 'universityDashboard/templates/dashboard.html'
+    Template_name = 'universityDashboard/template/dashboard.html'
     def get_context_data (self,*args, **kwargs):
         pass  
