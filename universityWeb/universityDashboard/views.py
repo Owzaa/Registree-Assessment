@@ -14,10 +14,10 @@ def dashView(request):
     university_marks = []
     university_names = []
     
-    return render(request,'templates/dashboard.html',{'response': response, 'title':title,})
+    return render(request,'universityDashboard/templates/dashboard.html',{'response': response, 'title':title,})
 
 # Dashboard TableView
 class DashboardTable(TemplateView):
-    Template_name = 'templates/dashboard.html'
+    Template_name = 'universityDashboard/templates/dashboard.html'
     def get_context_data (self,*args, **kwargs):
         pass  
